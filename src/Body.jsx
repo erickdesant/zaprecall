@@ -14,6 +14,7 @@ function Body(){
         { question: "Usamos props para __", answer: "Passar diferentes informações para componentes" },
         { question: "Usamos estado (state) para __", answer: "Dizer para o React quais informações quando atualizadas devem renderizar a tela novamente" }
     ]
+    const [counter,setCounter] = React.useState(0);
     return(
         <>
             <BodyWrapper>
@@ -21,8 +22,8 @@ function Body(){
                     <img src="../public/assets/logo.png" alt="logo"></img>
                     <h1>Zap Recall</h1>
                 </Logo>
-                <List cards = {cards}/>
-                <Footer/>
+                <List cards = {cards} setCounter = {setCounter} counter={counter}/>
+                <Footer cards = {cards} counter = {counter}/>
             </BodyWrapper>
         </>
     )

@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Footer(){
+function Footer({cards,counter}){
     return(
         <>
-            <FooterComp><h1>0/4 concluídos</h1></FooterComp>
+            <FooterComp><h1>{counter}/{cards.length} concluídos</h1></FooterComp>
         </>
-
     )
 }
 export default Footer;
