@@ -32,17 +32,17 @@ function ListItem ({question,answer,index,setCounter,counter}){
             setCounter()
             if(typeAnswer === 'failed'){
                 setState("answeredWrong")
-                setText(`Pergunta errada ${index + 1}`)
+                setText(`Pergunta ${index + 1}`)
                 setIcon("close-circle")
                 setCounter(counter + 1);
             }else if(typeAnswer === 'neutral'){
                 setState("answeredNeutral")
-                setText(`Pergunta neutra ${index + 1}`)
+                setText(`Pergunta ${index + 1}`)
                 setIcon("help-circle")
                 setCounter(counter + 1);
             }else if(typeAnswer === 'success'){
                 setState("answeredRight")
-                setText(`Pergunta acertada ${index + 1}`)
+                setText(`Pergunta ${index + 1}`)
                 setIcon("checkmark-circle")
                 setCounter(counter + 1);
             }
