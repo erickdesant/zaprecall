@@ -19,7 +19,7 @@ function Body(){
         <>
             <BodyWrapper>
                 <Logo>
-                    <img src="../public/assets/logo.png" alt="logo"></img>
+                    <img src="/assets/logo.png" alt="logo"></img>
                     <h1>Zap Recall</h1>
                 </Logo>
                 <List cards = {cards} setCounter = {setCounter} counter={counter}/>
